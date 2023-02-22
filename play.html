@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>The unofficial yet still fun Simon</title>
-</head>
-<body>
-    <header>
-        <h1>Simon®</h1>
-        <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="play.html">Play</a></li>
-            <li><a href="scores.html">Scores</a></li>
-            <li><a href="about.html">About</a></li>
-        </nav>    
-    </header>
-    <main>
-      <br/>
-      <div class="players">
-        Player:
-        <span class="player-name">Unknown player</span>
-      </div>
-
-      <br/>
-
-      <div>
-        <label for="count">Score</label>
-        <input type="text" id="count" value="0" readonly/>
-      </div>
-
-      <br/>
-
-      <div>
-        <button>Reset</button>
-      </div>
-
-      <br/>
-
-      <div>
-        <table>
-          <tr>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green"/>
-                </svg>
-              </button>
-            </td>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100" >
-                  <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
-                </svg>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
-                </svg>
-              </button>
-            </td>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
-                </svg>
-              </button>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </main>
-    <footer>
-        <br/>
-        <p>Sam Eastburn</p>
-        <a href="https://github.com/sameastburn/simon">GitHub</a>
-    </footer>  
-</body>
+	<head>
+		<title>The unofficial yet still fun Simon</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	</head>
+	<body>
+		<header class="p-3 mb-3 border-bottom">
+			<div class="container">
+				<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+					<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+						<li class="nav-link px-2 link-dark">Simon®</li>
+						<li>
+							<a href="index.html" class="nav-link px-2 link-secondary">Home</a>
+						</li>
+						<li>
+							<a href="play.html" class="nav-link px-2 link-dark">Play</a>
+						</li>
+						<li>
+							<a href="scores.html" class="nav-link px-2 link-dark">Scores</a>
+						</li>
+						<li>
+							<a href="about.html" class="nav-link px-2 link-dark">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<br />
+			<div class="players"> Player: <span class="player-name">Unknown player</span>
+			</div>
+			<br />
+			<div>
+				<label for="count">Score</label>
+				<input type="text" id="count" value="0" readonly />
+			</div>
+			<br />
+			<div>
+				<button>Reset</button>
+			</div>
+			<br />
+			<div>
+				<table>
+					<tr>
+						<td>
+							<button>
+								<svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
+									<path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green" />
+								</svg>
+							</button>
+						</td>
+						<td>
+							<button>
+								<svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
+									<path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
+								</svg>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>
+								<svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
+									<path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
+								</svg>
+							</button>
+						</td>
+						<td>
+							<button>
+								<svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
+									<path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
+								</svg>
+							</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</main>
+		<footer>
+			<br />
+			<p>Sam Eastburn</p>
+			<a href="https://github.com/sameastburn/simon">GitHub</a>
+		</footer>
+	</body>
+</html>
